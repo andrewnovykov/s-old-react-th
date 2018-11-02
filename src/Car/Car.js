@@ -2,9 +2,13 @@ import React, { Component } from 'react'
 
 class Car extends Component {
     render () {
+
+        const { name, year, children } = this.props;
+
         return <div>
-            <p>Car!</p>
-            <p>{Math.round(Math.random()*100)}</p>
+            <p>Car name: {  name }</p>
+            <p>Year: {  year }</p>
+            <div>{children}</div>
           </div>;
     }
 }
